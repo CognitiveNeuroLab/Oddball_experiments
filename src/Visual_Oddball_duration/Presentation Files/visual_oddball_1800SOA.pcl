@@ -1,0 +1,75 @@
+# RETT ADAPTATION SOA 1800 SOA: 
+# standard p(.85)/deviant p(0.15)
+# first 4 of each block are standards
+# deviant always follows at least two standards
+string direc = "C://Users//dohorsth//Dropbox (EinsteinMed)//Ana and Douwe - work//cystinosis paradigms//Oddball//visual_Oddball_duration//Presentation Files//"
+#string direc = "C://Users//Presentation//Projects//22Q//MMN//";  
+
+# Set parameters:
+;int ntrls = 125; # number of trials
+
+# array to be filled from pre-made sequence text files
+array<int> trl_order[ntrls]; 
+
+# Begin:
+
+# Read-in the trial order
+input_file order_in = new input_file;
+string file_path = direc + "sequences\\" + printf(random(1,50),"1800_sequence_%d.txt");
+order_in.open(file_path);
+order_in.set_delimiter( '\n' ); # for get_line()
+		
+int trl = 1;
+loop until
+	trl > ntrls
+begin
+	trl_order[trl] = order_in.get_int();
+	trl = trl+1;
+end;
+
+order_in.close();
+#
+
+# add a pause at the beginning of each block
+nothing_trial.present();
+	
+# run 4 standard trials at the begining before presenting any deviants	
+loop
+	int i = 1
+until
+	i > 4
+begin
+
+	
+	standard_trial.present();
+	isi_trial.present();
+	i = i + 1;
+	
+end;
+	
+loop
+	int t = 1
+until
+	t > ntrls
+begin
+	
+		
+	if trl_order[t] == 2 then # present the deviant 
+	
+		deviant_trial.present();
+	else
+	
+		standard_trial.present();
+	end;
+	
+	isi_trial.present();
+	
+	t = t + 1;
+		
+end;
+	
+end_block_trial.present();
+	
+
+
+
