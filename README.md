@@ -24,7 +24,7 @@ If you want to use markdown or HTML but you are not familiar check: https://www.
 <br />
 <p align="center">
   <a href="https://github.com/github_username/repo/">
-    <img src="images/logo.png" alt="Logo" width="160" height="160">
+    <img src="images/logo.jpeg" alt="Logo" width="160" height="160">
   </a> 
 
 <h3 align="center">project_title</h3>
