@@ -1,53 +1,35 @@
-<!--
-This is all based on https://github.com/othneildrew/Best-README-Template, othneildrew's "best-README-Template". I only made some edits 
-that I thought were making things clearer
-
-When starting a new readme file, to avoid retyping too much info. Do a search and replace with your text editor for the following:**
-`github_username`, `repo`, `twitter_handle`, `email`, `project_title`, `project_description`, 'linkedin_username'
-
-If you want to use markdown or HTML but you are not familiar check: https://www.markdownguide.org/basic-syntax/#reference-style-links
--->
-
-<!-- if you want different custom or unique shields see https://shields.io/category/build  -->
 [![Contributors][contributors-shield]][contributors-url]
 [![Forks][forks-shield]][forks-url]
 [![Stargazers][stars-shield]][stars-url]
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
-# work in progress, make sure to add that it's different oddballs based on oddball duration. + that to run it you need to first create enough sequences
 
-<!-- there is no way to align things when using Markdown, so in these instances we use HTML -->
-<!-- if you want to use a logo, make sure to upload your logo to your repo, or link to another place where it's online -->
+
+
 
 <br />
 <p align="center">
-  <a href="https://github.com/github_username/repo/">
+  <a href="https://github.com/DouweHorsthuis/Oddball_experiments/">
     <img src="images/logo.jpeg" alt="Logo" width="160" height="160">
   </a> 
 
-<h3 align="center">project_title</h3>
+<h3 align="center">Oddball paradigm</h3>
 
-<h4 align="center">project_description</h4>
+<h4 align="center"> This is still a work in progress. All new oddball paradigms that are run in the CNL can be added to this Repo. It currently has a Duration oddbal tone paradigm and a Visual oddball pardigm</h4>
 
-<!-- I think the table of contents is cleaner and more readable in markdown, so using markdown for these parts
-the basics are, put whatever you want to show up in [] put whatever you want to link to in () the linking part cannot
-have any spaces/characters, replaces spaces with - (_ does not work) the numbering should be indiferent (as you can see below) -->
 
 **Table of Contents**
   
 1. [About the project](#about-the-project)
-    - [Built With](#built-with)
-2. [Getting started](#getting-started)
-    - [Prerequisites](#prerequisites)  
-    - [Installation](#installation)  
-3. [Roadmap](#roadmap)
-3. [Contributing](#contributing)
+2. [Visual oddball](#getting-started)
+    - [Visual spacial oddball](#visual-spacial-oddball)  
+3. [Auditory oddball](#auditory-oddball)
+    - [Duration tone oddball](#duration-tone-oddball)
 3. [License](#license)
 3. [Contact](#contact)
-3. [Acknowledgement](#acknowledgement)
-3. [Usage](#usage)
+3. [Acknowledgements](#acknowledgements)
+
 
 
 
@@ -55,71 +37,38 @@ have any spaces/characters, replaces spaces with - (_ does not work) the numberi
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
+In this repo everyone can add all the the oddball paradigms that are being ran at the CNL. Currently in this repo:
+1- visual oddbal
+2- auditory duration tone oddball
 
-
-
-
-### Built With
-
-* []()
-* []()
-* []()
 
 
 
 <!-- GETTING STARTED -->
-## Getting Started
+## Visual Oddball
 
-To get a local copy up and running follow these simple steps.
+### Visual spacial oddball
 
-### Prerequisites
+For this oddball the soa is changing [(similar to the auditory Duration tone oddball)](#duration-tone-oddball).  
+The standard is happenin 80% of the time, it is a triangle that shows up in the middle of the screen.
+The deviant is happens 20% of the time, never in a row, by showing up lower then the Standard.
+We still need to decide how many trails we need per block
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+## Auditory oddball
 
-### Installation
+### Duration tone oddball
 
-1. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo/.git
-   ```
-2. Install NPM packages
-   ```sh
-   npm install
-   ```
+For this oddball the soa is changing, there is a 225-450-900-1800-3000 ms SOA.  
+The standard is happenin 80% of the time, it is a 100ms 1000hz tone.
+The deviant is happens 20% of the time, never in a row, it is a 180ms 1000hz tone..
+We still need to decide how many trails we need per block
 
 
-
-<!-- USAGE EXAMPLES -->
-## Usage
-
-Use this space to show useful examples of how a project can be used. Additional screenshots, code examples and demos work well in this space. You may also link to more resources.
-
-_For more examples, please refer to the [Documentation](https://example.com)_
-
-
-
-<!-- ROADMAP -->
-## Roadmap
-
-See the [open issues](https://github.com/github_username/repo/issues) for a list of proposed features (and known issues).
-
-
-
-<!-- CONTRIBUTING -->
 ## Contributing
 
-Contributions are what make the open source community such an amazing place to be learn, inspire, and create. Any contributions you make are **greatly appreciated**.
+Please add any oddball paradigm you are using to this repo  **greatly appreciated**.
 
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/AmazingFeature`)
-3. Commit your Changes (`git commit -m 'Add some AmazingFeature'`)
-4. Push to the Branch (`git push origin feature/AmazingFeature`)
-5. Open a Pull Request
+Feel free to reach out to Douwe Horsthuis (douwe.horstuis@einsteinmed.org or douwehorsthuis@gmail.com), or just add it to the repo.
 
 
 
@@ -133,34 +82,27 @@ Distributed under the MIT License. See `LICENSE` for more information.
 <!-- CONTACT -->
 ## Contact
 
-Your Name - [@twitter_handle](https://twitter.com/twitter_handle) - email
+Douwe Horsthuis - douwehorsthuis@gmail.com
 
-Project Link: [https://github.com/github_username/repo/](https://github.com/github_username/repo/)
+Project Link: [https://github.com/DouweHorsthuis/Oddball_experiments/](https://github.com/DouweHorsthuis/Oddball_experiments/)
 
 
 
 <!-- ACKNOWLEDGEMENTS -->
 ## Acknowledgements
 
-* []()
-* []()
-* []()
+* Luke Shaw - who made the first version of the oddball duration tone paradigm
 
 
 
 
-
-<!-- MARKDOWN LINKS & IMAGES -->
-<!-- https://www.markdownguide.org/basic-syntax/#reference-style-links -->
-[contributors-shield]: https://img.shields.io/github/contributors/github_username/repo.svg?style=for-the-badge
-[contributors-url]: https://github.com/github_username/repo/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/github_username/repo.svg?style=for-the-badge
-[forks-url]: https://github.com/github_username/repo/network/members
-[stars-shield]: https://img.shields.io/github/stars/github_username/repo.svg?style=for-the-badge
-[stars-url]: https://github.com/github_username/repo/stargazers
-[issues-shield]: https://img.shields.io/github/issues/github_username/repo.svg?style=for-the-badge
-[issues-url]: https://github.com/github_username/repo/issues
-[license-shield]: https://img.shields.io/github/license/github_username/repo.svg?style=for-the-badge
-[license-url]: https://github.com/github_username/repo/blob/master/LICENSE.txt
-[linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
-[linkedin-url]: https://linkedin.com/in/linkedin_username
+[contributors-shield]: https://img.shields.io/github/contributors/DouweHorsthuis/Oddball_experiments.svg?style=for-the-badge
+[contributors-url]: https://github.com/DouweHorsthuis/Oddball_experiments/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/DouweHorsthuis/Oddball_experiments.svg?style=for-the-badge
+[forks-url]: https://github.com/DouweHorsthuis/Oddball_experiments/network/members
+[stars-shield]: https://img.shields.io/github/stars/DouweHorsthuis/Oddball_experiments.svg?style=for-the-badge
+[stars-url]: https://github.com/DouweHorsthuis/Oddball_experiments/stargazers
+[issues-shield]: https://img.shields.io/github/issues/DouweHorsthuis/Oddball_experiments.svg?style=for-the-badge
+[issues-url]: https://github.com/DouweHorsthuis/Oddball_experiments/issues
+[license-shield]: https://img.shields.io/github/license/DouweHorsthuis/Oddball_experiments.svg?style=for-the-badge
+[license-url]: https://github.com/DouweHorsthuis/Oddball_experiments/blob/master/LICENSE.txt
