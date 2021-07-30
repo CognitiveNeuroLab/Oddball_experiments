@@ -10,7 +10,7 @@
 
 <br />
 <p align="center">
-  <a href="https://github.com/DouweHorsthuis/Oddball_experiments/">
+  <a href="https://github.com/CognitiveNeuroLab/Oddball_experiments/">
     <img src="images/logo.jpeg" alt="Logo" width="160" height="160">
   </a> 
 
@@ -52,7 +52,8 @@ In this repo everyone can add all the the oddball paradigms that are being ran a
 For this oddball the soa is changing [(similar to the auditory Duration tone oddball)](#duration-tone-oddball).  
 The standard is happenin 80% of the time, it is a triangle that shows up in the middle of the screen.
 The deviant is happens 20% of the time, never in a row, by showing up lower then the Standard.
-We still need to decide how many trails we need per block
+We still need to decide how many trails we need per block. 
+Created by [Douwe Horsthuis](https://github.com/DouweHorsthuis) and [Ana Francisco](https://github.com/anafrancisco)
 
 ## Auditory oddball
 
@@ -62,13 +63,13 @@ For this oddball the soa is changing, there is a 225-450-900-1800-3000 ms SOA.
 The standard is happenin 80% of the time, it is a 100ms 1000hz tone.
 The deviant is happens 20% of the time, never in a row, it is a 180ms 1000hz tone..
 We still need to decide how many trails we need per block
-
+Created by Luke Shaw and updated by [Douwe Horsthuis](https://github.com/DouweHorsthuis)
 
 ## Contributing
 
 Please add any oddball paradigm you are using to this repo  **greatly appreciated**.
 
-Feel free to reach out to Douwe Horsthuis (douwe.horstuis@einsteinmed.org or douwehorsthuis@gmail.com), or just add it to the repo.
+Feel free to reach out to Douwe Horsthuis (douwe.horstuis@einsteinmed.org or douwehorsthuis@gmail.com), or just add it to the repo and update the readme.
 
 
 
@@ -84,7 +85,7 @@ Distributed under the MIT License. See `LICENSE` for more information.
 
 Douwe Horsthuis - douwehorsthuis@gmail.com
 
-Project Link: [https://github.com/DouweHorsthuis/Oddball_experiments/](https://github.com/DouweHorsthuis/Oddball_experiments/)
+Project Link: [https://github.com/CognitiveNeuroLab/Oddball_experiments/](https://github.com/CognitiveNeuroLab/Oddball_experiments/)
 
 
 
@@ -96,13 +97,13 @@ Project Link: [https://github.com/DouweHorsthuis/Oddball_experiments/](https://g
 
 
 
-[contributors-shield]: https://img.shields.io/github/contributors/DouweHorsthuis/Oddball_experiments.svg?style=for-the-badge
-[contributors-url]: https://github.com/DouweHorsthuis/Oddball_experiments/graphs/contributors
-[forks-shield]: https://img.shields.io/github/forks/DouweHorsthuis/Oddball_experiments.svg?style=for-the-badge
-[forks-url]: https://github.com/DouweHorsthuis/Oddball_experiments/network/members
-[stars-shield]: https://img.shields.io/github/stars/DouweHorsthuis/Oddball_experiments.svg?style=for-the-badge
-[stars-url]: https://github.com/DouweHorsthuis/Oddball_experiments/stargazers
-[issues-shield]: https://img.shields.io/github/issues/DouweHorsthuis/Oddball_experiments.svg?style=for-the-badge
-[issues-url]: https://github.com/DouweHorsthuis/Oddball_experiments/issues
-[license-shield]: https://img.shields.io/github/license/DouweHorsthuis/Oddball_experiments.svg?style=for-the-badge
-[license-url]: https://github.com/DouweHorsthuis/Oddball_experiments/blob/master/LICENSE.txt
+[contributors-shield]: https://img.shields.io/github/contributors/CognitiveNeuroLab/Oddball_experiments.svg?style=for-the-badge
+[contributors-url]: https://github.com/CognitiveNeuroLab/Oddball_experiments/graphs/contributors
+[forks-shield]: https://img.shields.io/github/forks/CognitiveNeuroLab/Oddball_experiments.svg?style=for-the-badge
+[forks-url]: https://github.com/CognitiveNeuroLab/Oddball_experiments/network/members
+[stars-shield]: https://img.shields.io/github/stars/CognitiveNeuroLab/Oddball_experiments.svg?style=for-the-badge
+[stars-url]: https://github.com/CognitiveNeuroLab/Oddball_experiments/stargazers
+[issues-shield]: https://img.shields.io/github/issues/CognitiveNeuroLab/Oddball_experiments.svg?style=for-the-badge
+[issues-url]: https://github.com/CognitiveNeuroLab/Oddball_experiments/issues
+[license-shield]: https://img.shields.io/github/license/CognitiveNeuroLab/Oddball_experiments.svg?style=for-the-badge
+[license-url]: https://github.com/CognitiveNeuroLab/Oddball_experiments/blob/master/LICENSE.txt
