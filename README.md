@@ -16,7 +16,7 @@
 
 <h3 align="center">Oddball paradigm</h3>
 
-<h4 align="center"> This is still a work in progress. All new oddball paradigms that are run in the CNL can be added to this Repo. It currently has a Duration oddbal tone paradigm and a Visual oddball pardigm</h4>
+<h4 align="center"> This is still a work in progress. All new oddball paradigms that are run in the CNL can be added to this Repo. It currently has a Duration oddbal tone paradigm and a Visual oddball pardigm </h4>
 
 
 **Table of Contents**
