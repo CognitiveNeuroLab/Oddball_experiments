@@ -16,7 +16,7 @@ If you want to use markdown or HTML but you are not familiar check: https://www.
 [![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
-# work in progress, make sure to add that it's different oddballs based on oddball duration. 
+# work in progress, make sure to add that it's different oddballs based on oddball duration. + that to run it you need to first create enough sequences
 
 <!-- there is no way to align things when using Markdown, so in these instances we use HTML -->
 <!-- if you want to use a logo, make sure to upload your logo to your repo, or link to another place where it's online -->
