@@ -86,11 +86,11 @@ end;
 EyeLink.send_command("set_idle_mode");
 wait_interval(50);#in ms
 #tracker.set_parameter("transfer_image", ["C://Users//dohorsth//Documents//GitHub//Oddball_experiments//src//Visual_Oddball_duration//stimuli//standard.jpg", ",0,0,0,0," + string(display_width/2 - standard_bit.width()/2) + "," + string (display_height/2 - standard_bit.height()/2));]);
-tracker.set_parameter("transfer_image", [standard_bit, ",0,0,0,0," + string(display_width/2 - standard_bit.width()/2) + "," + string (display_height/2 - standard_bit.height()/2));]);
+#EyeLink.set_parameter("transfer_image", [standard_bit, ",0,0,0,0," + string(display_width/2 - standard_bit.width()/2) + "," + string (display_height/2 - standard_bit.height()/2));]);
 #######ET is setup now from here on it's paradigm specific #########
 
 
-string direc = "C://Users//dohorsth//Documents//GitHub//Oddball_experiments//src//visual_Oddball_duration//Presentation Files//"
+string direc = scenario_directory;
 
 # Set parameters:
 ;int ntrls = 220; # number of trials
@@ -130,17 +130,17 @@ loop
 until
 	t > ntrls
 begin
-	EyeLink.send_command("record_status_message 'Trial " + string(i) + "/220 start'"); #this shows up on the eyetracker for the experimenter to see 
-EyeLink.send_string( "TRIALID " + string(i));#this shows up in the edf file 
+	EyeLink.send_command("record_status_message 'Trial " + string(t) + "/220 start'"); #this shows up on the eyetracker for the experimenter to see 
+EyeLink.send_string( "TRIALID " + string(t));#this shows up in the edf file 
 	
 	if trl_order[t] == 2 then # present the deviant 
-		Eyelink.send_message("Deviant_onset"); # Put this in the line before you present your stimulus in the PCL file	
+		EyeLink.send_message("Deviant_onset"); # Put this in the line before you present your stimulus in the PCL file	
 		deviant_trial.present();
 	else
-		Eyelink.send_message("Standard_onset"); 
+		EyeLink.send_message("Standard_onset"); 
 		standard_trial.present();
 	end;
-	Eyelink.send_message("isi_onset"); 
+	EyeLink.send_message("isi_onset"); 
 	isi_trial.present();
 	
 	t = t + 1;
