@@ -1,11 +1,14 @@
+# Oddball_discriminate_duration 145ms dev
 # standard p(.85)/deviant p(0.15)
 # first 4 of each block are standards
 # deviant always follows at least two standards
+# SOA = 900 for STD & DEV
+# ISI = 800 for STD but 755 for DEV
+
 string direc = scenario_directory;
-#string direc = "C://Users//Presentation//Projects//22Q//MMN//";  
 
 # Set parameters:
-int ntrls = 125; # number of trials
+int ntrls = 30; # number of trials (this is the number in the sequence text files)
 
 # array to be filled from pre-made sequence text files
 array<int> trl_order[ntrls]; 
@@ -14,7 +17,7 @@ array<int> trl_order[ntrls];
 
 # Read-in the trial order
 input_file order_in = new input_file;
-string file_path = direc + "sequences\\" + printf(random(1,50),"any_sequence_%d.txt");
+string file_path = direc + "sequences\\" + printf(1,"145_sequence_%d.txt");
 order_in.open(file_path);
 order_in.set_delimiter( '\n' ); # for get_line()
 		
@@ -27,19 +30,19 @@ begin
 end;
 
 order_in.close();
-#
-
+#starting with trigger 201 so biosemi confg file starts saving automatic
+start_saving.present();
 # add a pause at the beginning of each block
 nothing_trial.present();
-	
+
 # run 4 standard trials at the begining before presenting any deviants	
 loop
 	int i = 1
 until
 	i > 4
 begin
-
-	isi_trial.set_duration(1700);		
+	
+	isi_trial.set_duration(800);
 	standard_trial.present();
 	isi_trial.present();
 	i = i + 1;
@@ -52,12 +55,11 @@ until
 	t > ntrls
 begin
 	
-		
 	if trl_order[t] == 2 then # present the deviant 
-		isi_trial.set_duration(1620);		
+		isi_trial.set_duration(755);
 		deviant_trial.present();
 	else
-		isi_trial.set_duration(1700);		
+		isi_trial.set_duration(800);
 		standard_trial.present();
 	end;
 	

@@ -5,10 +5,10 @@ clear variables
 % -> A deviant has to be preceded by at least 2 standards
 % -> standards comprise 85% of the sequence and deviants 15%
 % -> the sequence is pseudorandom otherwise.
-txt_file_name = '225_sequence_' ; % name of the text files should end in a underscore
+txt_file_name = '450_sequence_' ; % name of the text files should end in a underscore
 ntrls= 220; %amount of total trials for 1 block
-nblcks= 50; % amount of files the script makes (need 50 for the experiment)
-
+nblcks= 1; % amount of files the script makes (need 50 for the experiment)
+save_path = 'C:\Users\dohorsth\Documents\GitHub\Oddball_experiments\src\Visual_Oddball_duration\Presentation Files\sequences\';
 for b = 1:nblcks
     
     sequence = [];
@@ -62,7 +62,7 @@ for b = 1:nblcks
     % Print the sequence into a text file
     
     fname = sprintf([txt_file_name '%d.txt'],b);
-    fid = fopen(['C:\Users\dohorsth\Documents\GitHub\Oddball_experiments\src\Visual_Oddball_duration\Presentation Files\sequences\' fname],'w');
+    fid = fopen([save_path fname],'w');
     for n = 1:length(sequence)
         fprintf(fid,'%d\n',sequence(n));
     end
