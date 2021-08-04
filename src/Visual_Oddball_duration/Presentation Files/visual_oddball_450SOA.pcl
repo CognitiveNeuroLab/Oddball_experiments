@@ -1,13 +1,11 @@
-# RETT ADAPTATION SOA 450 SOA: 
 # standard p(.85)/deviant p(0.15)
-# first 4 of each block are standards
-# deviant always follows at least two standards
+# first 5 of each block are standards (set in sequence file)
+# deviant always follows at least two standards (set in sequence file)
 
-string direc = "C://Users//dohorsth//Dropbox (EinsteinMed)//Ana and Douwe - work//cystinosis paradigms//Oddball//visual_Oddball_duration//Presentation Files//"
-#"C://Users//Presentation//Projects//22Q//MMN//"; 
+string direc = "C://Users//dohorsth//Documents//GitHub//Oddball_experiments//src//visual_Oddball_duration//Presentation Files//"
 
 # Set parameters:
-;int ntrls = 125; # number of trials
+;int ntrls = 220; # number of trials
 
 # array to be filled from pre-made sequence text files
 array<int> trl_order[ntrls]; 
@@ -16,7 +14,8 @@ array<int> trl_order[ntrls];
 
 # Read-in the trial order
 input_file order_in = new input_file;
-string file_path = direc + "sequences\\" + printf(random(1,50),"450_sequence_%d.txt");
+#string file_path = direc + "sequences\\" + printf(random(1,50),"450_sequence_%d.txt"); #this one should be used for the real experiment
+string file_path = direc + "sequences\\" + printf(1,"450_sequence_%d.txt"); #this one should be used only when testing
 order_in.open(file_path);
 order_in.set_delimiter( '\n' ); # for get_line()
 		
@@ -34,20 +33,6 @@ order_in.close();
 # add a pause at the beginning of each block
 nothing_trial.present();
 
-# run 4 standard trials at the begining before presenting any deviants	
-loop
-	int i = 1
-until
-	i > 4
-begin
-	
-
-	standard_trial.present();
-	isi_trial.present();
-	i = i + 1;
-	
-end;
-	
 loop
 	int t = 1
 until

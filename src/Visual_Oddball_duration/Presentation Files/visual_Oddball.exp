@@ -1,6 +1,6 @@
 <ver>22</ver>
-<efn>C:\Users\dohorsth\Dropbox (EinsteinMed)\Ana and Douwe - work\cystinosis paradigms\oddball\Visual_Oddball_duration\Presentation Files\visual_Oddball.exp</efn>
-<author></author>
+<efn>C:\Users\dohorsth\Documents\GitHub\Oddball_experiments\src\Visual_Oddball_duration\Presentation Files\visual_Oddball.exp</efn>
+<author>Douwe Horsthuis</author>
 <con>
 <pause>P</pause>
 <pause_code></pause_code>
@@ -41,23 +41,23 @@
 <lfn></lfn>
 </docs>
 <dp_list></dp_list>
-<dsd>C:\Users\dohorsth\Dropbox (EinsteinMed)\Ana and Douwe - work\cystinosis paradigms\oddball\Visual_Oddball_duration\stimuli</dsd>
+<dsd>C:\Users\dohorsth\Documents\GitHub\Oddball_experiments\src\Visual_Oddball_duration\stimuli</dsd>
 <dwm>0</dwm>
 <dxv>8</dxv>
 <efs>
-<filename>C:\Users\dohorsth\Dropbox (EinsteinMed)\Ana and Douwe - work\cystinosis paradigms\oddball\Visual_Oddball_duration\Presentation Files\visual_oddball_225SOA.sce</filename>
-<filename>C:\Users\dohorsth\Dropbox (EinsteinMed)\Ana and Douwe - work\cystinosis paradigms\oddball\Visual_Oddball_duration\Presentation Files\visual_oddball_450SOA.sce</filename>
-<filename>C:\Users\dohorsth\Dropbox (EinsteinMed)\Ana and Douwe - work\cystinosis paradigms\oddball\Visual_Oddball_duration\Presentation Files\visual_oddball_900SOA.sce</filename>
-<filename>C:\Users\dohorsth\Dropbox (EinsteinMed)\Ana and Douwe - work\cystinosis paradigms\oddball\Visual_Oddball_duration\Presentation Files\visual_oddball_1800SOA.sce</filename>
-<filename>C:\Users\dohorsth\Dropbox (EinsteinMed)\Ana and Douwe - work\cystinosis paradigms\oddball\Visual_Oddball_duration\Presentation Files\visual_oddball_3000SOA.sce</filename>
-<filename>C:\Users\dohorsth\Dropbox (EinsteinMed)\Ana and Douwe - work\cystinosis paradigms\oddball\Visual_Oddball_duration\Presentation Files\visual_oddball_225SOA.pcl</filename>
-<filename>C:\Users\dohorsth\Dropbox (EinsteinMed)\Ana and Douwe - work\cystinosis paradigms\oddball\Visual_Oddball_duration\Presentation Files\visual_oddball_450SOA.pcl</filename>
-<filename>C:\Users\dohorsth\Dropbox (EinsteinMed)\Ana and Douwe - work\cystinosis paradigms\oddball\Visual_Oddball_duration\Presentation Files\visual_oddball_900SOA.pcl</filename>
-<filename>C:\Users\dohorsth\Dropbox (EinsteinMed)\Ana and Douwe - work\cystinosis paradigms\oddball\Visual_Oddball_duration\Presentation Files\visual_oddball_1800SOA.pcl</filename>
-<filename>C:\Users\dohorsth\Dropbox (EinsteinMed)\Ana and Douwe - work\cystinosis paradigms\oddball\Visual_Oddball_duration\Presentation Files\visual_oddball_3000SOA.pcl</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\Oddball_experiments\src\Visual_Oddball_duration\Presentation Files\visual_oddball_225SOA.sce</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\Oddball_experiments\src\Visual_Oddball_duration\Presentation Files\visual_oddball_450SOA.sce</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\Oddball_experiments\src\Visual_Oddball_duration\Presentation Files\visual_oddball_900SOA.sce</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\Oddball_experiments\src\Visual_Oddball_duration\Presentation Files\visual_oddball_1800SOA.sce</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\Oddball_experiments\src\Visual_Oddball_duration\Presentation Files\visual_oddball_3000SOA.sce</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\Oddball_experiments\src\Visual_Oddball_duration\Presentation Files\visual_oddball_225SOA.pcl</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\Oddball_experiments\src\Visual_Oddball_duration\Presentation Files\visual_oddball_450SOA.pcl</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\Oddball_experiments\src\Visual_Oddball_duration\Presentation Files\visual_oddball_900SOA.pcl</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\Oddball_experiments\src\Visual_Oddball_duration\Presentation Files\visual_oddball_1800SOA.pcl</filename>
+<filename>C:\Users\dohorsth\Documents\GitHub\Oddball_experiments\src\Visual_Oddball_duration\Presentation Files\visual_oddball_3000SOA.pcl</filename>
 </efs>
 <exclusive_mouse>1</exclusive_mouse>
-<exp_version></exp_version>
+<exp_version>1.1</exp_version>
 <exparam>
 <man>
 <cfg>
@@ -145,7 +145,7 @@
 <idt>0</idt>
 <ilc>0</ilc>
 <ip_chans></ip_chans>
-<lfd>C:\Users\dohorsth\Dropbox (EinsteinMed)\Ana and Douwe - work\cystinosis paradigms\oddball\Visual_Oddball_duration\logfiles\TONES</lfd>
+<lfd>C:\Users\dohorsth\Documents\GitHub\Oddball_experiments\src\Visual_Oddball_duration\Logfiles</lfd>
 <lnb>2</lnb>
 <lno>3</lno>
 <log>
@@ -478,23 +478,23 @@
 </sce>
 <sce>
 <overrides></overrides>
-<sfn>C:\Users\dohorsth\Dropbox (EinsteinMed)\Ana and Douwe - work\cystinosis paradigms\oddball\Visual_Oddball_duration\Presentation Files\visual_oddball_225SOA.sce</sfn>
+<sfn>C:\Users\dohorsth\Documents\GitHub\Oddball_experiments\src\Visual_Oddball_duration\Presentation Files\visual_oddball_225SOA.sce</sfn>
 </sce>
 <sce>
 <overrides></overrides>
-<sfn>C:\Users\dohorsth\Dropbox (EinsteinMed)\Ana and Douwe - work\cystinosis paradigms\oddball\Visual_Oddball_duration\Presentation Files\visual_oddball_450SOA.sce</sfn>
+<sfn>C:\Users\dohorsth\Documents\GitHub\Oddball_experiments\src\Visual_Oddball_duration\Presentation Files\visual_oddball_450SOA.sce</sfn>
 </sce>
 <sce>
 <overrides></overrides>
-<sfn>C:\Users\dohorsth\Dropbox (EinsteinMed)\Ana and Douwe - work\cystinosis paradigms\oddball\Visual_Oddball_duration\Presentation Files\visual_oddball_900SOA.sce</sfn>
+<sfn>C:\Users\dohorsth\Documents\GitHub\Oddball_experiments\src\Visual_Oddball_duration\Presentation Files\visual_oddball_900SOA.sce</sfn>
 </sce>
 <sce>
 <overrides></overrides>
-<sfn>C:\Users\dohorsth\Dropbox (EinsteinMed)\Ana and Douwe - work\cystinosis paradigms\oddball\Visual_Oddball_duration\Presentation Files\visual_oddball_1800SOA.sce</sfn>
+<sfn>C:\Users\dohorsth\Documents\GitHub\Oddball_experiments\src\Visual_Oddball_duration\Presentation Files\visual_oddball_1800SOA.sce</sfn>
 </sce>
 <sce>
 <overrides></overrides>
-<sfn>C:\Users\dohorsth\Dropbox (EinsteinMed)\Ana and Douwe - work\cystinosis paradigms\oddball\Visual_Oddball_duration\Presentation Files\visual_oddball_3000SOA.sce</sfn>
+<sfn>C:\Users\dohorsth\Documents\GitHub\Oddball_experiments\src\Visual_Oddball_duration\Presentation Files\visual_oddball_3000SOA.sce</sfn>
 </sce>
 <sct>
 <capture_device>
