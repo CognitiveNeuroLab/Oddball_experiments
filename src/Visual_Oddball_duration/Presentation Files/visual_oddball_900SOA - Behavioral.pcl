@@ -1,0 +1,149 @@
+# standard p(.85)/deviant p(0.15)
+# first 5 of each block are standards (set in sequence file)
+# deviant always follows at least two standards (set in sequence file)
+
+##setting up ET##
+eye_tracker EyeLink = new eye_tracker( "PresLink" );#this starts the eyetracker , the name of this (currently "PresLink") is whatever your extention is called (sometimes "EyeTracker")
+int dummy_mode = 0; #if this is 1 you can run the paradigm without eyetracking
+if dummy_mode == 1 then
+	EyeLink.set_parameter("tracker_address", "");
+end;         
+#connect to Eyelink tracker.
+EyeLink.start_tracking();
+string edfname_final = logfile.subject() + "vis_ob_1"; #names the EDF file, choose here the name of your individual edf file
+string edfname_out = "vis_ob_1";
+
+#here we are checking if the edf file already exists and if so it add a +1 to the ending
+int cntr = 1;
+loop
+	bool good_edfname = false; 
+until
+	good_edfname == true
+begin
+	if file_exists(logfile_directory + edfname_final + ".edf") then
+		cntr = cntr + 1;
+		edfname_final = logfile.subject() + "vis_ob_" + string(cntr); # + ".edf";
+		edfname_out = "vis_ob_" + string(cntr) 
+	else
+		good_edfname = true
+	end;
+end;
+
+if edfname_out.count() > 8 then
+	exit("EDF Filename needs to be smaller than 8 characters long (letters, numbers and underscores only)"); #if your EDF filename is longer it might start giving trouble specially if you do more than 9 blocks
+end;
+#remove the filename extension, because it will be added back later 
+array<string> temp[0];
+edfname_out.split(".", temp);
+edfname_out = temp[1];
+#Tell the Host PC to open the EDF file
+EyeLink.set_parameter("open_edf_file",edfname_out+".edf");
+#create variables to store the monitor's width and height in pixels
+int display_height = display_device.height();
+int display_width  = display_device.width();
+#this sends a command to set the screen_pixel_coords parameter on the Host PC, 
+EyeLink.send_command("screen_pixel_coords 0 0 " + string(display_width-1) + 
+	" " + string(display_height-1));	
+#this sends a message to the EDF tells Data Viewer the resolution of the experiment 
+EyeLink.send_message("DISPLAY_COORDS " + "0 0 " + string(display_width-1) + 
+	" " + string(display_height-1)); 
+#GET TRACKER VERSION; b)SELECT AVAILABLE SAMPLE/EVENT DATA
+string Eyelink_ver = EyeLink.get_parameter("tracker_version"); # get et version
+#tracker_ver will be something like EYELINK CL 4.48, but we want to get the 4.48
+array <string> string_array[5];
+Eyelink_ver.split(" ",string_array);
+double el_v = double(string_array[3]); #Host PC software version will be el_v
+term.print_line(el_v);
+#Select which events are saved in the EDF file. Include everything just in case
+EyeLink.send_command("file_event_filter = LEFT,RIGHT,FIXATION,SACCADE,BLINK,MESSAGE,BUTTON,INPUT");	#this ensures that Gaze data is recorded 
+EyeLink.send_command("link_event_filter = LEFT,RIGHT,FIXATION,SACCADE,BLINK,BUTTON,INPUT");
+
+#First, check tracker version so as to determine whether to include 'HTARGET'. Then, send commands to set the file_sample_data and link_sample_data parameters, 
+if (el_v >=4.0) then
+	#include HTARGET (head target) data if tracker is EyeLink 1000 or later
+	EyeLink.send_command("file_sample_data = LEFT,RIGHT,GAZE,AREA,GAZERES,STATUS,HTARGET,INPUT"); #Area token ensures Pupil size is recorded.
+	EyeLink.send_command("link_sample_data = LEFT,RIGHT,GAZE,GAZERES,AREA,STATUS,HTARGET,INPUT");
+else
+	EyeLink.send_command("file_sample_data = LEFT,RIGHT,GAZE,AREA,GAZERES,STATUS,INPUT");
+	EyeLink.send_command("link_sample_data = LEFT,RIGHT,GAZE,GAZERES,AREA,STATUS,INPUT"); 
+end;
+
+
+#CALIBRATE EYE TRACKER
+EyeLink.calibrate( et_calibrate_default, 1.0, 0.0, 0.0 );
+#this subroutine is called at the end of the script or if the Esc key is pressed during 
+sub cleanup begin
+	EyeLink.send_command("set_idle_mode"); #eyelink goes in idle mode
+	EyeLink.send_command("clear_screen 0");#clear Host PC screen at end of session
+	wait_interval(500); 
+	EyeLink.send_command("close_data_file");#close the EDF file and then allow 100 msec to ensure it's closed
+	if dummy_mode != 1 then
+		EyeLink.set_parameter("get_edf_file",logfile_directory + edfname_final + ".edf");#transfer the EDF file to the logfile directory of the experiment	on the Display PC
+	end;
+	EyeLink.stop_tracking();
+end;	
+#Set the the tracker to idle mode.  
+EyeLink.send_command("set_idle_mode");
+wait_interval(50);#in ms
+#tracker.set_parameter("transfer_image", ["C://Users//dohorsth//Documents//GitHub//Oddball_experiments//src//Visual_Oddball_duration//stimuli//standard.jpg", ",0,0,0,0," + string(display_width/2 - standard_bit.width()/2) + "," + string (display_height/2 - standard_bit.height()/2));]);
+tracker.set_parameter("transfer_image", [standard_bit, ",0,0,0,0," + string(display_width/2 - standard_bit.width()/2) + "," + string (display_height/2 - standard_bit.height()/2));]);
+#######ET is setup now from here on it's paradigm specific #########
+
+string direc = "C://Users//dohorsth//Documents//GitHub//Oddball_experiments//src//visual_Oddball_duration//Presentation Files//"
+
+# Set parameters:
+;int ntrls = 30; # number of trials
+
+# array to be filled from pre-made sequence text files
+array<int> trl_order[ntrls]; 
+
+# Begin:
+
+# Read-in the trial order
+input_file order_in = new input_file;
+#string file_path = direc + "sequences\\" + printf(random(1,50),"900_sequence_%d.txt"); #this one should be used for the real experiment
+string file_path = direc + "sequences\\" + printf(1,"900_sequence_%d.txt"); #this one should be used only when testing
+order_in.open(file_path);
+order_in.set_delimiter( '\n' ); # for get_line()
+		
+int trl = 1;
+loop until
+	trl > ntrls
+begin
+	trl_order[trl] = order_in.get_int();
+	trl = trl+1;
+end;
+
+order_in.close();
+#
+##ET##
+	EyeLink.set_recording(true);
+	wait_interval(100); #in ms
+##ET##
+
+# add a pause at the beginning of each block
+nothing_trial.present();
+	
+loop
+	int t = 1
+until
+	t > ntrls
+begin
+	EyeLink.send_command("record_status_message 'Trial " + string(i) + "/220 start'"); #this shows up on the eyetracker for the experimenter to see 
+EyeLink.send_string( "TRIALID " + string(i));#this shows up in the edf file 
+	
+	if trl_order[t] == 2 then # present the deviant 
+		Eyelink.send_message("Deviant_onset"); # Put this in the line before you present your stimulus in the PCL file	
+		deviant_trial.present();
+	else
+		Eyelink.send_message("Standard_onset"); 
+		standard_trial.present();
+	end;
+	Eyelink.send_message("isi_onset"); 
+	isi_trial.present();
+	
+	t = t + 1;
+		
+end;
+	
+end_block_trial.present();
