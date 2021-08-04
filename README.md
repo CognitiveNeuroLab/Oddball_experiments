@@ -51,10 +51,22 @@ In this repo everyone can add all the the oddball paradigms that are being ran a
 
 ### Visual spacial oddball
 
-For this oddball the soa is changing [(similar to the auditory Duration tone oddball)](#duration-tone-oddball).  
+For this oddball the soa is changing per block [(similar to the auditory Duration tone oddball)](#duration-tone-oddball).  
 The standard is happenin 80% of the time, it is a triangle that shows up in the middle of the screen.
 The deviant is happens 20% of the time, never in a row, by showing up lower then the Standard.
-We still need to decide how many trails we need per block. 
+There are 220 trial in one block, that will contain 33 deviants, so each block needs to be ran 3 times. 
+To use the experiment, use the Matlab script to create 50 sequence files for each **soa**, and change the presentation code **for each PCL**:  
+```presentation
+#string file_path = direc + "sequences\\" + printf(random(1,50),"225_sequence_%d.txt"); #this one should be used for the real experiment
+string file_path = direc + "sequences\\" + printf(1,"225_sequence_%d.txt"); #this one should be used only when testing
+```  
+Should be  
+```presentation
+string file_path = direc + "sequences\\" + printf(random(1,50),"225_sequence_%d.txt"); #this one should be used for the real experiment
+#string file_path = direc + "sequences\\" + printf(1,"225_sequence_%d.txt"); #this one should be used only when testing
+```
+This paradigm also has a behavioral part where every particpant should do 1 block of each SOA after they are all done with the passive part. 
+
 Created by [Douwe Horsthuis](https://github.com/DouweHorsthuis) and [Ana Francisco](https://github.com/anafrancisco)
 
 ## Auditory oddball
