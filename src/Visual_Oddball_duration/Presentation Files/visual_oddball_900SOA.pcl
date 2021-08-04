@@ -10,8 +10,8 @@ if dummy_mode == 1 then
 end;         
 #connect to Eyelink tracker.
 EyeLink.start_tracking();
-string edfname_final = logfile.subject() + "vis_oddb_1"; #names the EDF file, choose here the name of your individual edf file
-string edfname_out = "vis_oddb_1";
+string edfname_final = logfile.subject() + "vis_ob_1"; #names the EDF file, choose here the name of your individual edf file
+string edfname_out = "vis_ob_1";
 
 #here we are checking if the edf file already exists and if so it add a +1 to the ending
 int cntr = 1;
@@ -22,8 +22,8 @@ until
 begin
 	if file_exists(logfile_directory + edfname_final + ".edf") then
 		cntr = cntr + 1;
-		edfname_final = logfile.subject() + "vis_oddb_" + string(cntr); # + ".edf";
-		edfname_out = "vis_oddb_" + string(cntr) 
+		edfname_final = logfile.subject() + "vis_ob_" + string(cntr); # + ".edf";
+		edfname_out = "vis_ob_" + string(cntr) 
 	else
 		good_edfname = true
 	end;
