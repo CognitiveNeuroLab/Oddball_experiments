@@ -84,6 +84,7 @@ Created by Luke Shaw and extra soas added + updated by [Douwe Horsthuis](https:/
 For this oddball the duration of the deviant tone changes. The standard tone has a 100ms tone that contains at the start and end a 10ms rise and fall time. The deviants have a duration of 115ms (11ms rise/fall) 130ms (13ms rise/fall) 145ms (15ms rise/fall) 160ms (16ms rise/fall). 
 The standard is happenin 80% of the time and the deviant is happens 20% of the time. The tones are all 1000hz and are created using audacity.Every trail has a 800 ms ISI after a standard and the ISI after a deviant depends on whatever the length of the deviant is so the trial ends up being also 900 ms. Running 1 block takes 3 min 36 sec. Each block contains 240 trials (192 standards and 48 deviants). If the trial is a deviant or standard is decided in a semi randomized txt file. For each block there is 1 currently, but if this paradigm is ran for a study, use the matlab file to create 50 for each condition and change the presentation code to randomize which one it'll pick.
 
+When testing the timing of this paradigm **we found that there is 1ms between the onset of any stimulus and the trigger**. This is highly related to soundcards. If you plan to use this paradigm, you need to measure if this timing is also accurate for that computer.
 This experiment has also a behavioral part where it only does 30 trials and people should click for the deviant.  
 Created by [Douwe Horsthuis](https://github.com/DouweHorsthuis) and [Ana Francisco](https://github.com/anafrancisco)  
 

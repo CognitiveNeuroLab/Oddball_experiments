@@ -5,11 +5,11 @@
 # SOA = 900 for STD & DEV
 # ISI = 800 for STD but 770 for DEV
 
-string direc = "C://Users//dohorsth//Documents//GitHub//Oddball_experiments//src//Oddball_discrimination_duration//Presentation Files//"
+string direc = scenario_directory;
 #
 
 # Set parameters:
-;int ntrls = 240; # number of trials (this is the number in the sequence text files)
+int ntrls = 240; # number of trials (this is the number in the sequence text files)
 
 # array to be filled from pre-made sequence text files
 array<int> trl_order[ntrls]; 
