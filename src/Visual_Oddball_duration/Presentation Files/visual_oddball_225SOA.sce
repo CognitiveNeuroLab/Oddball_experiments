@@ -20,7 +20,7 @@ begin;
 #Load the stimuli:
 bitmap { filename = "standard.jpg"; preload = true; } standard_bit;
 bitmap { filename = "deviant.jpg";  preload = true; } deviant_bit;
-
+bitmap { filename = "standard_et.jpg"; preload = true; } et_bit;
 picture {
     #background_color = 0, 0, 0;    # no picture parts - a gray screen
 	bitmap standard_bit;
