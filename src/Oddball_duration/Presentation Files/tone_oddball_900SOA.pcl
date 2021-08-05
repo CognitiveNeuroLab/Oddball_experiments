@@ -15,7 +15,7 @@ array<int> trl_order[ntrls];
 
 # Read-in the trial order
 input_file order_in = new input_file;
-string file_path = direc + "sequences\\" + printf(random(1,50),"any_sequence_%d.txt");
+string file_path = direc + "sequences\\" + printf(random(1,50),"900_sequence_%d.txt");
 order_in.open(file_path);
 order_in.set_delimiter( '\n' ); # for get_line()
 		

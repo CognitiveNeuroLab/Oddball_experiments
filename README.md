@@ -74,9 +74,11 @@ Created by [Douwe Horsthuis](https://github.com/DouweHorsthuis) and [Ana Francis
 ### Duration tone oddball
 
 For this oddball the soa is changing, there is a 225-450-900-1800-3000 ms SOA.  
-The standard is happenin 80% of the time, it is a 100ms 1000hz tone.
+The standard is happening 80% of the time, it is a 100ms 1000hz tone.
 The deviant is happens 20% of the time, never in a row, it is a 180ms 1000hz tone..
 We still need to decide how many trails we need per block
+When testing the timing of this paradigm **we found that there is 1ms between the onset of any stimulus and the trigger**. This is highly related to soundcards. If you plan to use this paradigm, you need to measure if this timing is also accurate for that computer.
+
 Created by Luke Shaw and extra soas added + updated by [Douwe Horsthuis](https://github.com/DouweHorsthuis)  
 
 ### Duration discrimination oddball
