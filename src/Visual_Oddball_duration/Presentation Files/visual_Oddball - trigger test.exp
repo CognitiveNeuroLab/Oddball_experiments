@@ -1,5 +1,5 @@
 <ver>20.1</ver>
-<efn>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_visual\Presentation Files\visual_Oddball.exp</efn>
+<efn>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_visual\Presentation Files\visual_Oddball - trigger test.exp</efn>
 <author>Douwe Horsthuis</author>
 <con>
 <pause>P</pause>
@@ -43,16 +43,8 @@
 <dsd>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_visual\stimuli</dsd>
 <dxv>8</dxv>
 <efs>
-<filename>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_visual\Presentation Files\visual_oddball_225SOA.sce</filename>
-<filename>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_visual\Presentation Files\visual_oddball_450SOA.sce</filename>
-<filename>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_visual\Presentation Files\visual_oddball_900SOA.sce</filename>
-<filename>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_visual\Presentation Files\visual_oddball_1800SOA.sce</filename>
-<filename>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_visual\Presentation Files\visual_oddball_3000SOA.sce</filename>
-<filename>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_visual\Presentation Files\visual_oddball_225SOA.pcl</filename>
-<filename>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_visual\Presentation Files\visual_oddball_450SOA.pcl</filename>
-<filename>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_visual\Presentation Files\visual_oddball_900SOA.pcl</filename>
-<filename>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_visual\Presentation Files\visual_oddball_1800SOA.pcl</filename>
-<filename>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_visual\Presentation Files\visual_oddball_3000SOA.pcl</filename>
+<filename>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_visual\Presentation Files\visual_oddball_225SOA- trigger test.sce</filename>
+<filename>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_visual\Presentation Files\visual_oddball_3000SOA - trigger testing.sce</filename>
 </efs>
 <exclusive_mouse>1</exclusive_mouse>
 <exp_version>1.1</exp_version>
@@ -95,15 +87,6 @@
 <asn>
 <sid>-2</sid>
 </asn>
-<asn>
-<sid>-2</sid>
-</asn>
-<asn>
-<sid>-2</sid>
-</asn>
-<asn>
-<sid>-2</sid>
-</asn>
 </ssa>
 </man>
 </exparam>
@@ -117,9 +100,6 @@
 <ftp>
 <ccc>0</ccc>
 <do_upload>
-<sce>1</sce>
-<sce>1</sce>
-<sce>1</sce>
 <sce>1</sce>
 <sce>1</sce>
 </do_upload>
@@ -171,7 +151,7 @@
 </lslset>
 <maxpv></maxpv>
 <minpv></minpv>
-<nam>Visual oddball</nam>
+<nam>Visual oddball - to test trigger timing</nam>
 <one_processor>2</one_processor>
 <oports>
 <p>
@@ -464,23 +444,11 @@
 </sce>
 <sce>
 <overrides></overrides>
-<sfn>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_visual\Presentation Files\visual_oddball_225SOA.sce</sfn>
+<sfn>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_visual\Presentation Files\visual_oddball_225SOA- trigger test.sce</sfn>
 </sce>
 <sce>
 <overrides></overrides>
-<sfn>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_visual\Presentation Files\visual_oddball_450SOA.sce</sfn>
-</sce>
-<sce>
-<overrides></overrides>
-<sfn>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_visual\Presentation Files\visual_oddball_900SOA.sce</sfn>
-</sce>
-<sce>
-<overrides></overrides>
-<sfn>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_visual\Presentation Files\visual_oddball_1800SOA.sce</sfn>
-</sce>
-<sce>
-<overrides></overrides>
-<sfn>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_visual\Presentation Files\visual_oddball_3000SOA.sce</sfn>
+<sfn>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_visual\Presentation Files\visual_oddball_3000SOA - trigger testing.sce</sfn>
 </sce>
 <sct>
 <capture_device>

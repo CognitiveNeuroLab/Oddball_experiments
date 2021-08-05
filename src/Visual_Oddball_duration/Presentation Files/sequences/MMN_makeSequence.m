@@ -7,8 +7,8 @@ clear variables
 % -> the sequence is pseudorandom otherwise.
 txt_file_name = '450_sequence_' ; % name of the text files should end in a underscore
 ntrls= 220; %amount of total trials for 1 block
-nblcks= 1; % amount of files the script makes (need 50 for the experiment)
-save_path = 'C:\Users\dohorsth\Documents\GitHub\Oddball_experiments\src\Visual_Oddball_duration\Presentation Files\sequences\';
+nblcks= 50; % amount of files the script makes (need 50 for the experiment)
+save_path = 'D:\paradigms\Oddball_experiments\src\Visual_Oddball_duration\Presentation Files\sequences\';
 for b = 1:nblcks
     
     sequence = [];

@@ -1,34 +1,33 @@
 #  port code 201 = start recording
 #  port code 200 = pause recording
-#  port code 29 = standard (100ms sound) isi = 2900 soa = 3000
-#  port code 31 = deviant  (180ms sound) isi = 2820 soa = 3000
+#  port code 13 = standard (100ms sound) isi = 125 soa = 225
+#  port code 15 = deviant  (180ms sound) isi = 45  soa = 225
 
-scenario = "visual_oddball_3000SOA";
+scenario = "visual_oddball_225SOA - trigger test";
 
 no_logfile = false;
 scenario_type = trials;
-default_background_color = 128, 128, 128;
+default_background_color = 0, 0, 0;
 default_text_color = 255, 0, 255;
 default_font_size = 18;  
 
 write_codes = true; 
 pulse_width = 10;
-pcl_file = "visual_oddball_3000SOA.pcl";
+pcl_file = "visual_oddball_225SOA.pcl";
 
 begin;
 
-#Load the auditory stimuli:
-bitmap { filename = "standard.jpg"; preload = true; } standard_bit;
-bitmap { filename = "deviant.jpg";  preload = true; } deviant_bit;
+#Load the stimuli:
+bitmap { filename = "triggertest.jpg"; preload = true; } standard_bit;
+bitmap { filename = "triggertest.jpg";  preload = true; } deviant_bit;
 bitmap { filename = "standard_et.jpg"; preload = true; } et_bit;
-
 picture {
-   # background_color = 0, 0, 0;    # no picture parts - a gray screen
+    #background_color = 0, 0, 0;    # no picture parts - a gray screen
 	bitmap standard_bit;
 	x=0; y=0;
 } standard_pic;
 picture {
-   # background_color = 0, 0, 0;    # no picture parts - a gray screen
+    #background_color = 0, 0, 0;    # no picture parts - a gray screen
 	bitmap deviant_bit;
 	x=0; y=0;
 } deviant_pic;
@@ -40,14 +39,14 @@ trial {
 trial_duration = 2000;
 	stimulus_event {
 		picture default;
-		code = "3000 ISI";  
+		code = "225 ISI";  
 		port_code = 201;  
 		time = 0;
 	};
 } nothing_trial;
 
 trial {
-trial_duration = 2900;
+trial_duration = 125;
 	stimulus_event {
 		picture default;
 		time = 0;
@@ -59,13 +58,9 @@ trial_duration = 100;
 	stimulus_event {
 		picture standard_pic;  
 		time = 0;     
-	} event_standard;
-	stimulus_event {
-		nothing{};
-		deltat=7;
 		code = "standard";  
-		port_code = 29; 
-	}code_std;
+		port_code = 13;  
+	} event_standard;
 }standard_trial;
   
 trial {
@@ -73,21 +68,20 @@ trial_duration = 100;
 	stimulus_event {
 		picture deviant_pic;   
 		time = 0;     
-	} event_deviant;
-		stimulus_event {
-		nothing{};
-		deltat=7;
 		code = "deviant";  
-		port_code = 31;  
-	}code_dev;
+		port_code = 15;  
+	} event_deviant;
 }deviant_trial;
 
 trial {
-trial_duration = 2000;
+trial_duration = 2000; 
 	stimulus_event {
 		nothing{};
-		code = "3000 ISI";  
+		code = "225 ISI";  
 		port_code = 200;  
 		time = 0;
       } event_end_block;  
    } end_block_trial;
+
+
+

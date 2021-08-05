@@ -29,11 +29,11 @@
 <depchg>1</depchg>
 <discard_windows_messages>0</discard_windows_messages>
 <display_status_window>1</display_status_window>
-<dmd>0</dmd>
-<dmh>0</dmh>
-<dmr>1</dmr>
-<dmrf>1</dmrf>
-<dmw>0</dmw>
+<dmd>32</dmd>
+<dmh>1024</dmh>
+<dmr>60</dmr>
+<dmrf>60.02</dmrf>
+<dmw>1280</dmw>
 <docs>
 <args></args>
 <exfl></exfl>
@@ -553,7 +553,7 @@
 <combine>0</combine>
 <ignore>1000</ignore>
 <isr>0</isr>
-<max_rec_dur>60</max_rec_dur>
+<max_rec_dur>10</max_rec_dur>
 <md></md>
 <mio></mio>
 <off_inter>200</off_inter>

@@ -3,13 +3,13 @@
 #  port code 29 = standard (100ms sound) isi = 2900 soa = 3000
 #  port code 31 = deviant  (180ms sound) isi = 2820 soa = 3000
 
-scenario = "visual_oddball_3000SOA";
+scenario = "visual_oddball_3000SOA - trigger testing";
 
 no_logfile = false;
 scenario_type = trials;
-default_background_color = 128, 128, 128;
+default_background_color = 0, 0, 0;
 default_text_color = 255, 0, 255;
-default_font_size = 18;  
+default_font_size = 18; 
 
 write_codes = true; 
 pulse_width = 10;
@@ -18,8 +18,8 @@ pcl_file = "visual_oddball_3000SOA.pcl";
 begin;
 
 #Load the auditory stimuli:
-bitmap { filename = "standard.jpg"; preload = true; } standard_bit;
-bitmap { filename = "deviant.jpg";  preload = true; } deviant_bit;
+bitmap { filename = "triggertest.jpg"; preload = true; } standard_bit;
+bitmap { filename = "triggertest.jpg";  preload = true; } deviant_bit;
 bitmap { filename = "standard_et.jpg"; preload = true; } et_bit;
 
 picture {
@@ -59,13 +59,9 @@ trial_duration = 100;
 	stimulus_event {
 		picture standard_pic;  
 		time = 0;     
-	} event_standard;
-	stimulus_event {
-		nothing{};
-		deltat=7;
 		code = "standard";  
-		port_code = 29; 
-	}code_std;
+		port_code = 29;  
+	} event_standard;
 }standard_trial;
   
 trial {
@@ -73,13 +69,9 @@ trial_duration = 100;
 	stimulus_event {
 		picture deviant_pic;   
 		time = 0;     
-	} event_deviant;
-		stimulus_event {
-		nothing{};
-		deltat=7;
 		code = "deviant";  
 		port_code = 31;  
-	}code_dev;
+	} event_deviant;
 }deviant_trial;
 
 trial {
