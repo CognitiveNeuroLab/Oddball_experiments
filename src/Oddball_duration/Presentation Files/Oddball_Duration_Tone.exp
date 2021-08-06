@@ -1,5 +1,5 @@
 <ver>20.1</ver>
-<efn>E:\Paradigms to put on github\Oddball_duration\Presentation Files\Oddball_Duration_Tone.exp</efn>
+<efn>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_duration\Oddball_duration\Presentation Files\Oddball_Duration_Tone.exp</efn>
 <author></author>
 <con>
 <pause>P</pause>
@@ -40,19 +40,19 @@
 <lfn></lfn>
 </docs>
 <dp_list></dp_list>
-<dsd>E:\Paradigms to put on github\Oddball_duration\stimuli</dsd>
+<dsd>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_duration\Oddball_duration\stimuli</dsd>
 <dxv>8</dxv>
 <efs>
-<filename>E:\Paradigms to put on github\Oddball_duration\Presentation Files\tone_oddball_225SOA.sce</filename>
-<filename>E:\Paradigms to put on github\Oddball_duration\Presentation Files\tone_oddball_450SOA.sce</filename>
-<filename>E:\Paradigms to put on github\Oddball_duration\Presentation Files\tone_oddball_900SOA.sce</filename>
-<filename>E:\Paradigms to put on github\Oddball_duration\Presentation Files\tone_oddball_1800SOA.sce</filename>
-<filename>E:\Paradigms to put on github\Oddball_duration\Presentation Files\tone_oddball_3000SOA.sce</filename>
-<filename>E:\Paradigms to put on github\Oddball_duration\Presentation Files\tone_oddball_225SOA.pcl</filename>
-<filename>E:\Paradigms to put on github\Oddball_duration\Presentation Files\tone_oddball_450SOA.pcl</filename>
-<filename>E:\Paradigms to put on github\Oddball_duration\Presentation Files\tone_oddball_900SOA.pcl</filename>
-<filename>E:\Paradigms to put on github\Oddball_duration\Presentation Files\tone_oddball_1800SOA.pcl</filename>
-<filename>E:\Paradigms to put on github\Oddball_duration\Presentation Files\tone_oddball_3000SOA.pcl</filename>
+<filename>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_duration\Oddball_duration\Presentation Files\tone_oddball_225SOA.sce</filename>
+<filename>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_duration\Oddball_duration\Presentation Files\tone_oddball_450SOA.sce</filename>
+<filename>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_duration\Oddball_duration\Presentation Files\tone_oddball_900SOA.sce</filename>
+<filename>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_duration\Oddball_duration\Presentation Files\tone_oddball_1800SOA.sce</filename>
+<filename>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_duration\Oddball_duration\Presentation Files\tone_oddball_3000SOA.sce</filename>
+<filename>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_duration\Oddball_duration\Presentation Files\tone_oddball_225SOA.pcl</filename>
+<filename>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_duration\Oddball_duration\Presentation Files\tone_oddball_450SOA.pcl</filename>
+<filename>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_duration\Oddball_duration\Presentation Files\tone_oddball_900SOA.pcl</filename>
+<filename>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_duration\Oddball_duration\Presentation Files\tone_oddball_1800SOA.pcl</filename>
+<filename>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_duration\Oddball_duration\Presentation Files\tone_oddball_3000SOA.pcl</filename>
 </efs>
 <exclusive_mouse>1</exclusive_mouse>
 <exp_version></exp_version>
@@ -143,7 +143,7 @@
 <idt>0</idt>
 <ilc>0</ilc>
 <ip_chans></ip_chans>
-<lfd>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_duration\Oddball_duration\logfiles\Tones</lfd>
+<lfd>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_duration\Oddball_duration\logfiles\TONES</lfd>
 <lnb>2</lnb>
 <lno>3</lno>
 <log>
@@ -464,23 +464,23 @@
 </sce>
 <sce>
 <overrides></overrides>
-<sfn>E:\Paradigms to put on github\Oddball_duration\Presentation Files\tone_oddball_225SOA.sce</sfn>
+<sfn>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_duration\Oddball_duration\Presentation Files\tone_oddball_225SOA.sce</sfn>
 </sce>
 <sce>
 <overrides></overrides>
-<sfn>E:\Paradigms to put on github\Oddball_duration\Presentation Files\tone_oddball_450SOA.sce</sfn>
+<sfn>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_duration\Oddball_duration\Presentation Files\tone_oddball_450SOA.sce</sfn>
 </sce>
 <sce>
 <overrides></overrides>
-<sfn>E:\Paradigms to put on github\Oddball_duration\Presentation Files\tone_oddball_900SOA.sce</sfn>
+<sfn>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_duration\Oddball_duration\Presentation Files\tone_oddball_900SOA.sce</sfn>
 </sce>
 <sce>
 <overrides></overrides>
-<sfn>E:\Paradigms to put on github\Oddball_duration\Presentation Files\tone_oddball_1800SOA.sce</sfn>
+<sfn>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_duration\Oddball_duration\Presentation Files\tone_oddball_1800SOA.sce</sfn>
 </sce>
 <sce>
 <overrides></overrides>
-<sfn>E:\Paradigms to put on github\Oddball_duration\Presentation Files\tone_oddball_3000SOA.sce</sfn>
+<sfn>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_duration\Oddball_duration\Presentation Files\tone_oddball_3000SOA.sce</sfn>
 </sce>
 <sct>
 <capture_device>
@@ -499,7 +499,7 @@
 <combine>0</combine>
 <ignore>1000</ignore>
 <isr>0</isr>
-<max_rec_dur>10</max_rec_dur>
+<max_rec_dur>60</max_rec_dur>
 <md></md>
 <mio></mio>
 <off_inter>200</off_inter>

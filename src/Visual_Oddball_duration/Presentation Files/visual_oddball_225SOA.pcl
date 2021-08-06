@@ -99,8 +99,8 @@ array<int> trl_order[ntrls];
 # Begin:
 # Read-in the trial order
 input_file order_in = new input_file;
-#string file_path = direc + "sequences\\" + printf(random(1,50),"225_sequence_%d.txt"); #this one should be used for the real experiment
-string file_path = direc + "sequences\\" + printf(1,"225_sequence_%d.txt"); #this one should be used only when testing
+string file_path = direc + "sequences\\" + printf(random(1,50),"225_sequence_%d.txt"); #this one should be used for the real experiment
+#string file_path = direc + "sequences\\" + printf(1,"225_sequence_%d.txt"); #this one should be used only when testing
 order_in.open(file_path);
 order_in.set_delimiter( '\n' ); # for get_line()
 		

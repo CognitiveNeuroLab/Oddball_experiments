@@ -59,10 +59,14 @@ trial {
 trial_duration = 100;
 	stimulus_event {
 		picture standard_pic;  
-		time = 0;     
-		code = "standard";  
-		port_code = 25;  
+		time = 0;      
 	} event_standard;
+	stimulus_event {	
+		nothing{};
+		deltat=8;
+		code = "standard";  
+		port_code = 25; 
+	} event_std;
 }standard_trial;
   
 trial {
@@ -70,9 +74,13 @@ trial_duration = 100;
 	stimulus_event {
 		picture deviant_pic;   
 		time = 0;     
-		code = "deviant";  
-		port_code = 27;  
 	} event_deviant;
+	stimulus_event {	
+		nothing{};
+		deltat=8;
+		code = "deviant";  
+		port_code = 27; 
+	} dev_code;
 }deviant_trial;
 
 trial {

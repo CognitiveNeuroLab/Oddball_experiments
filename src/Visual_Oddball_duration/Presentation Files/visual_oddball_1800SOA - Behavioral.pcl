@@ -86,7 +86,7 @@ end;
 EyeLink.send_command("set_idle_mode");
 wait_interval(50);#in ms
 ### this will load the image to the eyetracker (is not working currently because it ends up in the left top corner instead of center)
-#	EyeLink.set_parameter("transfer_image", standard_bit.filename()); 
+EyeLink.set_parameter("transfer_image", et_bit.filename());
 
 #######ET is setup now from here on it's paradigm specific #########
 
@@ -101,8 +101,8 @@ array<int> trl_order[ntrls];
 
 # Read-in the trial order
 input_file order_in = new input_file;
-#string file_path = direc + "sequences\\" + printf(random(1,50),"1800_sequence_%d.txt"); #this one should be used for the real experiment
-string file_path = direc + "sequences\\" + printf(1,"1800_sequence_%d.txt"); #this one should be used only when testing
+string file_path = direc + "sequences\\" + printf(random(1,50),"1800_sequence_%d.txt"); #this one should be used for the real experiment
+#string file_path = direc + "sequences\\" + printf(1,"1800_sequence_%d.txt"); #this one should be used only when testing
 order_in.open(file_path);
 order_in.set_delimiter( '\n' ); # for get_line()
 		

@@ -144,7 +144,7 @@
 <ilc>0</ilc>
 <ip_chans></ip_chans>
 <lfd>C:\Users\Presentation\Desktop\Active Projects\Oddball\Oddball_visual\Logfiles</lfd>
-<lnb>2</lnb>
+<lnb>0</lnb>
 <lno>3</lno>
 <log>
 <append_counter>1</append_counter>
@@ -556,6 +556,7 @@
 <vt>0</vt>
 </trigger_mode>
 <udt>0</udt>
+<ulo>0ms delay and stable tested on 8/6/2021 in Adult Booth Right</ulo>
 <unc></unc>
 <upb>0</upb>
 <urp>0</urp>

@@ -86,7 +86,7 @@ end;
 EyeLink.send_command("set_idle_mode");
 wait_interval(50);#in ms
 ### this will load the image to the eyetracker (is not working currently because it ends up in the left top corner instead of center)
-#	EyeLink.set_parameter("transfer_image", standard_bit.filename()); 
+EyeLink.set_parameter("transfer_image", et_bit.filename());
 
 #######ET is setup now from here on it's paradigm specific #########
 
