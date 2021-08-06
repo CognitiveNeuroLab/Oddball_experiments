@@ -68,7 +68,10 @@ string file_path = direc + "sequences\\" + printf(random(1,50),"225_sequence_%d.
 This paradigm also has a behavioral part where every particpant should do 1 block of each SOA after they are all done with the passive part. 
 Both parts have eyetracking.
 
-When testing the timing of this paradigm **we found that there is 0ms between the onset of any stimulus and the trigger**. in the "code_std" event in the scenario we delay the trigger by 7ms so they happen at the same time.
+When testing the timing of this paradigm **we found that there is 0ms between the onset of any stimulus and the trigger**. in the "code_std" event in the scenario we delay the trigger by 7ms so they happen at the same time.  
+
+As you can see here the onset of the trigger (orange) happens a the same time as when the stimulus changes thresholds 
+![timing](https://github.com/CognitiveNeuroLab/Oddball_experiments/images/Timing_visual_oddball.jpeg)
 
 Created by [Douwe Horsthuis](https://github.com/DouweHorsthuis) and [Ana Francisco](https://github.com/anafrancisco)
 
