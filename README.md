@@ -27,6 +27,7 @@
 3. [Auditory oddball](#auditory-oddball)
     - [Duration discrimination oddball](#duration-discrimination-oddball)
     - [Duration tone oddball](#duration-tone-oddball)
+    - [Rhythm oddball](#rhythm-oddball)
     - [Omission Oddball](#omission-oddball)
 3. [License](#license)
 3. [Contact](#contact)
@@ -42,8 +43,11 @@
 In this repo everyone can add all the the oddball paradigms that are being ran at the CNL. Currently in this repo:
 1- auditory duration discrimination oddball
 2- auditory duration tone oddball
-3- auditory ommision oddball
-4- visual oddbal
+3- Rhythm oddball
+4- auditory ommision oddball
+5- visual oddbal
+
+*almost all paradigms will have 50 sequence files of one randomly will be selected. These need to be created first using the matlab file (MMN_makeSequence)*
 
 
 
@@ -56,7 +60,9 @@ In this repo everyone can add all the the oddball paradigms that are being ran a
 For this oddball the duration of the deviant tone changes. The standard tone has a 100ms tone that contains at the start and end a 10ms rise and fall time. The deviants have a duration of 115ms (11ms rise/fall) 130ms (13ms rise/fall) 145ms (15ms rise/fall) 160ms (16ms rise/fall). 
 The standard is happenin 80% of the time and the deviant is happens 20% of the time. The tones are all 1000hz and are created using audacity.Every trail has a 800 ms ISI after a standard and the ISI after a deviant depends on whatever the length of the deviant is so the trial ends up being also 900 ms. Running 1 block takes 3 min 36 sec. Each block contains 240 trials (192 standards and 48 deviants). If the trial is a deviant or standard is decided in a semi randomized txt file. For each block there is 1 currently, but if this paradigm is ran for a study, use the matlab file to create 50 for each condition and change the presentation code to randomize which one it'll pick.
 
-When testing the timing of this paradigm **we found that there is 1ms between the onset of any stimulus and the trigger**. This is highly related to soundcards. If you plan to use this paradigm, you need to measure if this timing is also accurate for that computer.
+When testing the timing of this paradigm **we found that there is 2ms between the onset of any stimulus and the trigger**. This is highly related to soundcards. If you plan to use this paradigm, you need to measure if this timing is also accurate for that computer.  
+![timing](https://github.com/CognitiveNeuroLab/Oddball_experiments/blob/master/images/Timing_discrimination.JPG)   
+
 This experiment has also a behavioral part where it only does 30 trials and people should click for the deviant.  
 Created by [Douwe Horsthuis](https://github.com/DouweHorsthuis) and [Ana Francisco](https://github.com/anafrancisco)  
 
@@ -66,12 +72,19 @@ For this oddball the soa is changing, there is a 225-450-900-1800-3000 ms SOA.
 The standard is happening 80% of the time, it is a 100ms 1000hz tone.
 The deviant is happens 20% of the time, never in a row, it is a 180ms 1000hz tone..
 We still need to decide how many trails we need per block
-When testing the timing of this paradigm **we found that there is 1ms between the onset of any stimulus and the trigger**. This is highly related to soundcards. If you plan to use this paradigm, you need to measure if this timing is also accurate for that computer.
+When testing the timing of this paradigm **we found that there is 2ms between the onset of any stimulus and the trigger**. This is highly related to soundcards. If you plan to use this paradigm, you need to measure if this timing is also accurate for that computer.  
 
 Created by Luke Shaw and extra soas added + updated by [Douwe Horsthuis](https://github.com/DouweHorsthuis)  
 
+### Rhythm oddball
+For this oddball paradigm the standard and deviant tone are both the same tone; a 1000hz 100ms tone with a 10ms rise and fall time. The standard trial (85%) is and 800ms ISI followed by the 100ms tone, whereas the deviant trial (15%) is 260 440 or 620ms, depending on the block, followed by the 100ms tone. All deviant preceded by at least 2 standards and there are no deviants in the first 4 trials. Each block needs to be ran 4 times resulting in 144 deviants.  When testing the timing of this paradigm **we found that there is 2ms between the onset of any stimulus and the trigger**. 
+![timing](https://github.com/CognitiveNeuroLab/Oddball_experiments/blob/master/images/Timing_rhythm.JPG)
+
+Created by [Douwe Horsthuis](https://github.com/DouweHorsthuis) and [Ana Francisco](https://github.com/anafrancisco)  
+
 ### Ommision oddball
 For this oddball there is a standard 1000hz 50ms tone with a rise and fall time of 5ms presented 85% of the times. 15% of the times there is a 50ms silence presented. All deviant preceded by at least 2 standards and there are no deviants in the first 4 trials.  This should results in a MMN, however this specific MMN wasn't clear (not none existend) when we looked at the data so it got dropped from the project. Each block has a different ISI. Each block needs to be ran 4 times resulting in 144 deviants.  When testing the timing of this paradigm **we found that there is 2ms between the onset of any stimulus and the trigger**. 
+![timing](https://github.com/CognitiveNeuroLab/Oddball_experiments/blob/master/images/Timing_omission.JPG)
 
 Created by [Douwe Horsthuis](https://github.com/DouweHorsthuis) and [Ana Francisco](https://github.com/anafrancisco)  
 
