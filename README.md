@@ -23,6 +23,7 @@
   
 1. [About the project](#about-the-project)
 2. [Visual oddball](#getting-started)
+    - [Visual discrimination duration oddball](#visual-discrimination-duration-oddball)
     - [Visual spacial oddball](#visual-spacial-oddball)  
 3. [Auditory oddball](#auditory-oddball)
     - [Duration discrimination oddball](#duration-discrimination-oddball)
@@ -90,10 +91,29 @@ Created by [Douwe Horsthuis](https://github.com/DouweHorsthuis) and [Ana Francis
 
 ## Visual Oddball
 
+### Visual discrimination duration oddball
+For this oddball the duration of the deviant changes depending on the blocks. It functions the same way as [Duration discrimination oddball](#duration-discrimination-oddball).However the durations are slightly different due to the refresh rate of the monitor that we present it on. 
+The standard is happening 80% of the time, it is a circle that stays in the middle of the screen for 100ms.
+The deviant is happens 20% of the time, never in a row, by showing having the circle stay longer on the screen (165 216 265 or 316ms).
+There are 220 trial in one block, that will contain 33 deviants, so each block needs to be ran 3 times. 
+To use the experiment, use the Matlab script to create 50 sequence files for each **soa**, and change the presentation code **for each PCL**:  
+```presentation
+#string file_path = direc + "sequences\\" + printf(random(1,50),"225_sequence_%d.txt"); #this one should be used for the real experiment
+string file_path = direc + "sequences\\" + printf(1,"225_sequence_%d.txt"); #this one should be used only when testing
+```  
+Should be  
+```presentation
+string file_path = direc + "sequences\\" + printf(random(1,50),"225_sequence_%d.txt"); #this one should be used for the real experiment
+#string file_path = direc + "sequences\\" + printf(1,"225_sequence_%d.txt"); #this one should be used only when testing
+```
+This paradigm is active so the participant should click whenever they detect the deviant. There is also eye tracking.
+
+When testing the timing of this paradigm **we found that there is 0ms between the onset of any stimulus and the trigger**. in the "code_std" event in the scenario we delay the trigger by 7ms so they happen at the same time. When testing the duration of the stimulus on the screen we realized we needed to change the length to be less long. This is needed because presentation can prepare the stimulus for the next refresh rate. *when tested the standard = 100ms and the deviants are exactly 165 216 265 or 316ms respectively. 
+
 ### Visual spacial oddball
 
 For this oddball the soa is changing per block [(similar to the auditory Duration tone oddball)](#duration-tone-oddball).  
-The standard is happenin 80% of the time, it is a triangle that shows up in the middle of the screen.
+The standard is happening 80% of the time, it is a triangle that shows up in the middle of the screen.
 The deviant is happens 20% of the time, never in a row, by showing up lower then the Standard.
 There are 220 trial in one block, that will contain 33 deviants, so each block needs to be ran 3 times. 
 To use the experiment, use the Matlab script to create 50 sequence files for each **soa**, and change the presentation code **for each PCL**:  
@@ -106,8 +126,8 @@ Should be
 string file_path = direc + "sequences\\" + printf(random(1,50),"225_sequence_%d.txt"); #this one should be used for the real experiment
 #string file_path = direc + "sequences\\" + printf(1,"225_sequence_%d.txt"); #this one should be used only when testing
 ```
-This paradigm also has a behavioral part where every particpant should do 1 block of each SOA after they are all done with the passive part. 
-Both parts have eyetracking.
+This paradigm also has a behavioral part where every participant should do 1 block of each SOA after they are all done with the passive part. 
+Both parts have eye tracking.
 
 When testing the timing of this paradigm **we found that there is 0ms between the onset of any stimulus and the trigger**. in the "code_std" event in the scenario we delay the trigger by 7ms so they happen at the same time.  
 
@@ -115,7 +135,7 @@ As you can see here the onset of the trigger (orange) happens a the same time as
 ![timing](https://github.com/CognitiveNeuroLab/Oddball_experiments/blob/master/images/Timing_visual_oddball.JPG)
 
 Created by [Douwe Horsthuis](https://github.com/DouweHorsthuis) and [Ana Francisco](https://github.com/anafrancisco)
-
+*After Piloting we decided to drop this paradigm. Instead we will use a visual version of the [Duration discrimination oddball](#duration-discrimination-oddball).
 
 ## Contributing
 
