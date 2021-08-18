@@ -41,12 +41,12 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-In this repo everyone can add all the the oddball paradigms that are being ran at the CNL. Currently in this repo:
-1- auditory duration discrimination oddball
-2- auditory duration tone oddball
-3- Rhythm oddball
-4- auditory ommision oddball
-5- visual oddbal
+In this repo everyone can add all the the oddball paradigms that are being ran at the CNL. Currently in this repo:  
+1. Auditory duration discrimination oddball  
+2. Auditory duration tone oddball
+3. Auditory Rhythm oddball
+4. Auditory ommision oddball
+5. Visual oddbal
 
 *almost all paradigms will have 50 sequence files of one randomly will be selected. These need to be created first using the matlab file (MMN_makeSequence)*
 
