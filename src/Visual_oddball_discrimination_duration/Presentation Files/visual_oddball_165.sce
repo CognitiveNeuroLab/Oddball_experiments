@@ -20,6 +20,9 @@ begin;
 #Load the auditory stimuli:
 bitmap { filename = "standard.jpg"; preload = true; } standard_bit;
 bitmap { filename = "standard_et.jpg"; preload = true; } et_bit;
+picture { #this will change the background of the Eyetracker calibration to the same as the paradigm's
+   background_color = 128, 128, 128;
+} et_calibration;
 
 picture {
    # background_color = 0, 0, 0;    # no picture parts - a gray screen
