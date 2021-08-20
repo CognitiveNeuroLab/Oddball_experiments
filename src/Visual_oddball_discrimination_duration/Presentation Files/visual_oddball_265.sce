@@ -25,6 +25,9 @@ picture {
 	bitmap standard_bit;
 	x=0; y=0;
 } standard_pic;
+picture { #this will change the background of the Eyetracker calibration to the same as the paradigm's
+   background_color = 128, 128, 128;
+} et_calibration;
 
 
 picture {
